@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string>
+#include <iostream>
+using namespace std;
+int main() {
+	//integer input validation
+	int a=0;
+	cout << "Enter a number: ";
+	while( !(cin>>x) || x<=0 ) {
+		cout << "Invalid input. Enter an integer greater than 0: ";	//error message
+		cin.clear();
+		cin.ignore(100,'\n');
+	}
+	//program prints numbers from 1 to a
+	int b = 1;
+	while(a<0) {
+		cout << b << ", ";
+		b++;
+		a--;
+	}
+}
