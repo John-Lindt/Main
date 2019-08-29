@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+#include <string>
+
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+
+    string a;
+
+    int b=0;
+
+    printf("String");
+
+    cin >> a;
+
+    b=a.length;
+
+    if(b<=0 || b>30) {
+
+        cout << "Invalid" << endl;
+
+    }
+
+    else if(b>10 && b<21) {
+
+        cout << "med" << endl;
+
+    }
+
+    else if(b>20 && b<31) {
+
+        cout << "big" << endl;
+
+    }
+
+    else {
+
+        cout << "small" << endl;
+
+    }
+
+    return 0;
+
+}
