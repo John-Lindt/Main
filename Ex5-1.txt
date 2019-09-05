@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+void factor(int a) {
+	int b=a;
+	for(int i=1;i<b;i++) {
+		a*=i;
+	}
+	cout << a;
+}
+int main() {
+	cout << "Factorial of 5: ";
+	factor(5);
+}
