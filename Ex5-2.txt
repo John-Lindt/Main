@@ -1,0 +1,16 @@
+#include <stdio.h>
+int vol(int a);
+int vol(int a, int b, int c);
+int main(void) {
+	int l=2,w=3,h=4;
+	int a=vol(l);
+	int b=vol(2,3,4);
+	printf("Cube vol: %i.\nRect vol: %i.",a,b);
+	return 0;
+}
+int vol(int a) {
+	return a*a*a;
+}
+int vol(int a, int b, int c) {
+	return a*b*c;
+}
