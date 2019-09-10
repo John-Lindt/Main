@@ -1,0 +1,51 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int fact(int a);
+bool prime(int a);
+int tobin(int a);
+int main(void) {
+int a=fact(5);
+if(prime(a)) {
+	cout << a << " is prime." << endl;
+}
+else {
+	cout << a << " is not prime." << endl;
+}
+	cout << a << " in binary is " << tobin(a) << "." << endl;
+return 0;
+}
+int fact(int a) {
+if(a<2) {
+	return 1;
+}
+else {
+	return a*fact(--a);
+}
+}
+bool prime(int a) {
+for(int i=2;i<=(a/2);i++) {
+	if(a%i==0) {
+		return false;
+	}
+}
+return true;
+}
+int tobin(int a) {
+int max=1;
+int r=0;
+while((a-max)>0) {
+	max*=2;
+}
+max/=2;
+int bin[(max/2)+1];
+while(max>0) {
+	if((a-max)>0) {
+		a-=max;
+		int b=log2(max);
+		r+=pow(10,b);
+	}
+	max/=2;
+}
+return r;
+}
