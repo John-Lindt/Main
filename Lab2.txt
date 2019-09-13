@@ -1,0 +1,13 @@
+#include <stdio.h>
+int fact(int a);
+int main(void) {
+	printf("5 factorial is %i.",fact(5));
+}
+int fact(int a) {
+if(a<2) {
+	return 1;
+}
+else {
+	return a*fact(a);
+}
+}
