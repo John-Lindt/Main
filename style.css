@@ -1,0 +1,56 @@
+.footnote {
+	text-align:center;
+	font-size:.5em;
+}
+body {
+	background-color:#F38561;
+	color:#ffffff;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	text-shadow:
+		-.5px -.5px 0 #000,
+		.5px -.5px 0 #000,
+		-.5px .5px 0 #000,
+		.5px .5px 0 #000;
+	font-weight:bolder;
+	font-size:1.5em;
+}
+.profile {
+	height:300px;
+	width:auto;
+	float:left;
+}
+.header {
+	width:100%;
+	height:auto;
+}
+a {
+	text-decoration:none;
+	color:#ffffff;
+}
+a.hover {
+	text-decoration:underline;
+}
+.nav {
+	font-variant:small-caps;
+	font-size:2em;
+}
+a[href$=".html"] {
+	padding:0px 10px 0px 0px;
+}
+a:active {
+	color:#F5088A
+}
+.gallery img {
+	width:25%;
+	height:auto;
+}
+img.hover {
+
+}
+/*
+Umaru colors: 
+outfit: #F38561
+background: #F2F26F
+text outline: #F5088A
+alt: #FEC868
+*/
