@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main(void) {
+int a,b,*a1,*b1, *c;
+cout << "Enter an int: ";
+cin >> a;
+cout << "Enter an int: ";
+cin >> b;
+a1=&a;
+b1=&b;
+c=*a1;
+*a1=*b1;
+*b1=c;
+cout << "Second int: " << a << ". First int: " << b;
+return 0;
+}
