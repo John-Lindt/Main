@@ -1,0 +1,54 @@
+#include <iostream>
+using namespace std;
+int mult(int* a, int* b, int* c);
+int arrMax(int a[],b);
+int vecMax(vector<int> a);
+int main(void) {
+int* a=4,b=5,c=6;
+int arr[3]={4,5,6};
+vector<int> v;
+v.push_back(4);
+v.push_back(5);
+v.push_back(6);
+cout << "Mult function: 4*5*6=" << mult(a,b,c) << ". ArrMax function: max value=" << arrMax(arr,3);
+cout << ". VecMax function: max value=" << vecMax(v);
+return 0;
+}//end function main
+int mult(int* a, int* b, int* c) {
+	return &a*&b*&c;
+}//end function mult
+int arrMax(int a[],b) {
+int ret=a[0];
+if(b<1) {
+	return 0;
+}
+else if(b=1) {
+	return a[0];
+}
+else {
+	for(int i=1;i<b;i++) {
+		if(a[i]>ret) {
+			ret=a[i];
+		}
+	}
+}
+return ret;
+}//end function arrMax
+int vecMax(vector<int> a) {
+if(a.empty()) {
+	return 0;
+}
+int size,ret=a.front();
+size=a.size();
+if(size=1) {
+	return ret;
+}
+else {
+	for(int i=1;i<size;i++) {
+		if(a.at(i)>ret) {
+			ret=a.at(i);
+		}
+	}
+}
+return ret;
+}//end function vecMax
