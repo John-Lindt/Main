@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main(void) {
+int a,b,c;
+cout << "Enter an int: ";
+cin >> a;
+cout << "Enter an int: ";
+cin >> b;
+cout << "Before swap: a=" << a << ", b=" << b << endl;
+int& a1=a;
+int& b1=b;
+c=a1;
+a1=b1;
+b1=c;
+cout << a << b << a1 << b1 << c <<  endl;
+cout << "After swap: a=" << a << ", b=" << b << endl;
+return 0;
+}
