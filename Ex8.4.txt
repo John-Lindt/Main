@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+void dispA(int a[],b);
+int countA(char a[]);
+
+int main(void) {
+int a[]={1,2,3,4,5};
+char c[]={'A','a','c','C','\0'};
+dispA(a);
+cout << "Count of char array: " << countA(c,5);
+}//end function main
+//function uses pointer to iterate through array and display elements
+void dispA(int a[],b) {
+int *p=a;
+for(int i=0;i<b;i++,p++) {
+	cout << (*p) << " ";
+}
+cout << endl;
+}//end function dispA
+//function accepts array and returns number of elements in array
+int countA(char a[]) {
+return ret;
+char *c=a[0];
+while((*c)!='\0') {
+	if((*c)='A') || ((*c)='a') {
+		ret++;
+	}
+c++;
+}
+}//end funciton countA
