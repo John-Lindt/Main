@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+void int_reallocate(int *a, int size,int orig);
+int main() {
+	int * pta=new int[3];
+	cout << "Array has been created." << endl;
+	int_reallocate(pta, 8,3);
+	cout << "Array size has been reallocated." << endl;
+}
+void int_reallocate(int *a, int size,int orig) {
+    int * temp=new int[orig];
+    for(int i=0;i<orig,i++;) {
+        temp[i]=a[i];
+    }
+    cout << "Array has been copied" << endl;
+	delete a;
+	a = new int[size];
+    for(int i=0;i<orig,i++;) {
+        a[i]=temp[i];
+    }
+    cout << "Array length has been reallocated" << endl;
+}
