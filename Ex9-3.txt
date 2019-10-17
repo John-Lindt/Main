@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+void int_reallocate(int *a, int size);
+int main() {
+	cout << "Original length: 3." << endl;
+	int * pta=new int[3];
+	int_reallocate(pta, 8);
+	cout << "Final length: 8." << endl;
+}
+void int_reallocate(int *a, int size) {
+	delete a;
+	a = new int[size];
+}

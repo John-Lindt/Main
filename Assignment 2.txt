@@ -1,0 +1,120 @@
+#include <stdlib.h>
+#include <time.h>
+#include <iostream>
+using namespace std;
+char ** mgrid(int size);
+void populate(char ** res, int size);
+void populate2(char ** res, int size);
+void print_grid(char ** res, int size);
+srand(time(NULL));
+int main() {
+	int gsize=8,gnum=24,gx=-1,gy=-1,sleft=10;
+	char ** ggrid = mgrid(gsize);
+	char ** rgrid = mgrid(gsize);
+	populate(ggrid,gsize);
+	populate(rgrid,gsize);
+	populate2(rgrid,gsize);
+	//loops while player has guesses remaining and there are ships not found
+	while(gnum>0 && sleft>0) {
+		//main game
+		print_grid(ggrid,gsize);
+		cout << "Enter the x coordinate between 0 and 7: ";
+		cin >> gx;
+		cout << "Enter the y coordinate between 0 and 7: ";
+		cin >> gy;
+		for(int i=0;i<gsize;i++) {
+			if(ggrid[gx][gy]=='0') {
+				ggrid[gx][gy]='0';
+				rgrid[gx][gy]='-';
+				sleft--;
+				cout << "Hit! " << sleft << " ships remaining." << endl;
+			}
+		}
+		//decrement counter
+		gnum--;
+		cout << gnum << " attempts remaining." << endl;
+	}
+	cout << "Grid of remaining ships:" << endl;
+	print_grid(rgrid,gsize);
+	//if player succeeded
+	if(sleft==0) {
+		cout << "You win! Congradulations!" << endl;
+	}
+	//if player failed
+	else if(sleft>0) {
+		cout << "Catastrophic failure! You lose!" << endl;
+	}
+return 0;
+}
+//make grid function
+char ** mgrid(int size) {
+	//allocate pointers to pointers in memory
+	char ** ret = (char **) malloc(size*sizeof(char *));
+	}
+	if (ret==null) {
+		exit (1);
+	}
+	//allocate sub-pointers in memory
+	for(int i=0;i<size;i++) {
+		ret[i] = (char *)malloc(size*sizeof(char *));
+	}
+	for(int i=0;i<size;i++) {
+		for(int j=0;j<size;j++;) {
+			ret[i][j]='-';
+		}
+	}
+	return ret;	
+}
+//function defaults grid
+void populate(char ** res, int size) {
+	for(int i=0;i<size;i++) {
+		for(int j=0;j<size;j++) {
+			res[i][j]='-';
+		}
+	}
+}
+//function fills grid with ships
+void populate2(char ** res, int size) {
+	int ship=10, isGood=0;
+	//2d array of x and y coordinates of ships
+	int toAdd[10][2];
+	while(ship>0) {
+		//fill first elements of array with coordinates
+		toAdd[0][0]=rand() % size;
+		toAdd[0][1]=rand() % size;
+		//fill rest of array with coordinates
+		for(int i=1;i<10;i++) {
+			//reset isGood
+			isGood=0;
+			//make sure no overlaps occur
+			while(isGood==0) {
+				isGood++;
+				toAdd[i][0]=rand() % size;
+				toAdd[i][1]=rand() % size;
+				for(int j=0;j<i;j++) {
+					//check if elements match previous
+					if((toAdd[i][0]==toAdd[j][0]) && (toAdd[i][1]==toAdd[j][1])) {
+						isGood=0;
+						j=i+1;	//to break if loop, since no more checks necessary
+					}
+				}
+			}//new, unique element added to array
+		}//toAdd array element filled
+	ship--;
+	}//toAdd array filled
+	//populate grid
+	for(int i=0;i<10;i++) {
+		int locX=toAdd[i][0];
+		int locY=toAdd[i][1];
+		res[locX][locY]='0';
+	}//grid populated with 10 ships
+}
+//function accepts 2d array pointer and prints grid
+void print_grid(char ** res, int size) {
+	for(int i=0;i<size;i++) {
+		for(int j=0;j<size;j++) {
+			cout << res[i][j] << " ";
+		}
+		cout << endl;
+	}
+}
