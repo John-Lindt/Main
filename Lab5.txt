@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+void mergeSort(int *a, int low, int high);
+void merge(int *a, int low, int high, int mid);
+int main() {
+	int list[9]={23,2,19,7,37,11,32,55,21};
+	cout << "Original list: ";
+	for(int i=0;i<9;i++) {
+		cout << list[i] << " ";
+	}
+	cout << "." << endl;
+	mergeSort(list,0,8);
+	cout << "Merge sorted list: ";
+	for(int i=0;i<9;i++) {
+		cout << list[i] << " ";
+	}
+	cout << "." << endl;
+}
+void mergeSort(int *a, int low, int high) {
+	int mid;
+	if(low<high) {
+		mid=(low+high)/2;
+		mergeSort(a,low,mid);
+		mergeSort(a,mid+1,high);
+		merge(a,low,high,mid);
+	}
+}
+void merge(int *a, int low, int high, int mid) {
+	int i=low,j=(mid+1),k=0,temp[high-low+1];
+	while(i<=mid && j<=high) {
+		if(a[i]<a[j]) {
+			temp[k]=a[i];
+			k++;
+			i++;
+		}
+		else {
+			temp[k]=a[j];
+			k++;
+			j++;
+		}
+	}
+	while(i<=mid) {
+		temp[k]=a[i];
+		k++;
+		i++;
+	}
+	while(j<=high) {
+		temp[k]=a[j];
+		k++;
+		j++;
+	}
+	for(i=low;i<=high;i++) {
+		a[i]=temp[i-low];
+	}
+}
