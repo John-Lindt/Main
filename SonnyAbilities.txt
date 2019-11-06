@@ -1,0 +1,113 @@
+Abilities:
+
+Quick Strike-moderately effective early attack.
+Try to replace with stronger attacks ASAP. Keep around as a fallback in case you run out of focus. Scales with attributes, but not very effectively.
+Use only if you can't use any stronger attacks.
+
+Supression-useful for all classes, unfortunately misspelled.
+Don't underestimate this default ability. The 70% damage reduction is applied across the board, and the move doesn't require focus.
+Try to use it when enemy attacks are ramping up, as it can only be equipped once.
+
+Smash-a must for str-focused characters.
+High damage, can be equipped multiple times. Recommend you get and max out early, and fill your ability wheel with it (at least 3 slots in the endgame).
+Great for any point in battle.
+
+Wound-only DOT attack in the str ability line.
+Equip multiple times if facing multiple enemies. If not, save the slots for other abilities.
+Best to do ASAP so the DOT effect can be maximized. Also makes future attacks more potent.
+
+Break-only stun attack in the str ability line.
+Only moderate functionality if you want to use it. Useful for a few enemies, mostly those with 'next attack will deal X% more damage' and Dr. Herregods.
+Best if you know an enemy's next attack is going to be especially strong to nullify their one-turn buff.
+
+Disruption-only ability that targets focus.
+A step above useless. Not bad for Sinjid's Shadow, but there are other ways of dealing with him.
+Waste of time at any point in the fight.
+
+Sunder-provides a moderate amount of debuffs, lowering str and increasing damage taken.
+Don't bother with this ability. Okay stepping stone to master strike and coup de grace.
+Best not used in a fight. No reason you should use it unless you like prolonging a battle unnecessarily.
+
+Master Strike-moderately useful for Assassins.
+Makes the Assassin class seem almost useful. High crit isn't bad, but it's a pretty big investment given how many ability points are needed to even unlock it.
+Best used to counter shadow blend.
+
+Coup De Grace-good for str focused characters. Surprisingly useful for Assassins.
+This one's a little counter-intuitive, but the lower accuracy can be offset by the Assassin's high speed. Smash is more practical for Destroyers, as it is more accurate and is easier to get.
+Best used later in battle to finish enemies off.
+
+Iron Skin-pretty much an upgraded Supression, with similar functionality.
+Health boost and increased defense is solid early game. Unfortunately, it can only used on Sonny. Guardians should consider investing in defensive abilities that can protect teammates instead.
+Great if you're low on health.
+
+Regeneration-Useful for all classes.
+Highly recommend investing heavily in this. Passive health and focus regen can keep you going longer, especially if Veradux/Catelin is unavailable.
+Try to get early in the game, as it will benifit you throughout.
+
+Reform-best for str classes.
+Scales with strength, so clearly intended for attack-focused characters. 
+Best used for emergency healing.
+
+Blood Focus-useful for all classes.
+Use very carefully. Siphoning your health is playing with fire, and can quickly kill you if misused.
+Should only be used if focus is critically needed and no other options are available.
+
+Flame Strike-best for Guardians.
+Less of an investment than Electro Bolt, as it's the first in it's ability line. Does more damage, but lacks the utility of buff removal offered by Electro Bolt. There are also significantly fewer items that boost fire piercing.
+Use liberally throughout battle.
+
+Cripple-useful for Assassins.
+Utility of the speed debuff not strong enough to be particularly useful. Overall weak attack.
+Use early against higher speed enemies or to counter shadow blend.
+
+Brutality-useful for all classes.
+Just get it. Get it ASAP. Very useful, no ability point wasting, affects all direct damage.
+Get it and max it out as soon as you can.
+
+Aggression-best for Guardians.
+Waste of a turn if used on yourself. Great for empowering allies if you're acting as a support.
+Best used early in battle.
+
+Heroic Motivation-a must for Guardians.
+This ability is a cornerstone for the Guardian class. Heal your allies and yourself while removing debuffs. Equip as much as possible.
+Best used to counter DOT debuffs or when you or your allies are at low health.
+
+Bosses:
+
+Zone 1: Counter-intuitively, go for the ZPCI Captain first. Even though he has the highest health, he also has stun capabilities. Take out the ZPCI Assault next, and the Medic last.
+You get two moves before your opponents, so use the first to attack/buff attributes and the second to defend. This will make early attacks much easier to deal with.
+Dispatch the Captain early. Doing so will ensure he'll only be able to get 1-2 stuns in.
+The Assault is pretty much a weaker version of the Captain without stun capabilities. He'll use special attacks until he runs out of focus, at which point he'll switch to the weaker Quick Strike.
+Normally, you'd target the team healer first. However, the Medic's healing capabilities are limited to a moderate health boost.
+His lack of focus regen capabilities or non-focus attacks mean that once he runs out of focus, he runs out of moves. By the time you've dispatched the other two, he will likelybe out of focus and easy pickings.
+
+Zone 2: This is essentially a four part fight. Hit Sensei Ishiguro hard and continuously to keep him on the defensive. 
+While Ishiguro lacks focus regen capabilities, he has a sizable focus pool means he'll be able to use focus-powered attacks throughout the fight.
+His healing capabilities are strong enough that you have to knock his health down four times. Luckily, these moves are focus-burners, and keep him from using his DOT attacks.
+Consider investing in Heroic Motivation to remove the debuffs he can stack on your party.
+
+Zone 3: There are three boss fights in this zone: one end-boss and three sub-bosses.
+The first sub-boss is the Rockstar. His capabilities make him an upgraded Stone Golem. He can deal some substantial damage with a sizable health pool to match.
+Weaken him with debuffs, disable him with stuns, and wear him down with DOT attacks.
+The second sub-boss (or, more accurately, sub-bosses) is the Council. The members are stronger Shamans, so deal with them as you would a party of analagous Shamans.
+Take down the healer first with strong attacks to lower the effectiveness of his healing buffs. Begin targeting the Striker with DOT attacks and debuffs to weaken him while you deal with the spellcaster.
+The spellcaster has the lowest health, and is fairly easy to kill. His attacks are standard Gunslinger and effective enough to be an issue, especially with the DOT attacks.
+The striker has the highest health and speed, so DOT attacks and debuffs are the best way to take him down.
+It should be noted that the ZPCI Paladin support team can be taken down the same way.
+The third sub-boss is harder than any other boss in the zone. Fortunately, you have a powerful ally in the form of Galiant the Paladin.
+Galiant deals a little under 2000 damage a turn, which is probably more than you and Veradux combined are able to inflict. Focus on keeping him alive and buffed if possible; if Galiant goes down, Sonny and Veradux are likely to follow.
+Heroic Motivation is useful for dealing with the Baron's stacking shadow DOT attacks.
+The final boss is Galiant the Paladin himself. Fortunately, he's a lot weaker as an enemy than as an ally.
+He has moderate healing abilities but is akin to a Destroyer in most other ways. Hitting him hard and fast should yield a quick win.
+
+Zone 4: This is just boss fights, with each stage requiring its own tactics. Spend some time with the Illusions to power up, and make sure to get Veradux a full set of Paladin armor if you want to keep him viable.
+The first boss is arguably the hardest. Hard hitting attacks, superb healing (has an ability that regens 1000 health/turn), and no focus-burning abilities will make this a tough fight.
+Electro Bolt and Heroic Motivation are enough to counter his Fate attack and healing abilities. With those disabled, Ignition is a fairly weak enemy due to his low health pool.
+The second boss is where stun abilities are the strongest. Omen has a lot of health, so a combination of direct and DOT attacks are the most effective. Let your allies deal the most damage while he's powered up while you focus on stun attacks.
+Another option is Electro Bolt to remove the buff, but your allies might not get the stronger attacks in.
+There's really only one way to defeat the third boss. Doctor Herregods heals twice his total health if it drops 10000. His other abilities are weak enough that you don't have to worry about healing.
+Stun lock him while your allies get his health below 990000, ideally using break and shatter bolt to incapacitate him for six turns. Then, use subversion to cause his healing ability to kill him.
+The final boss has the strongest attack, easily killing anyone it hits. There are a couple of ways to deal with Sinjid's Shadow. Dispatch Shadow's Shadows early; they aren't the strongest, but can buff their party up.
+The first way to deal with him is to use disrupt to keep his focus below 100. The attack requires 100 focus, so anything less keeps his attacks weak and allows you to wear him down.
+The second way is to use the Block and Intervention abilities to keep your party protected and healthy. Make sure to have both so you can keep everyone safe.
+From there, use a combination of direct and DOT attacks to bring him down.

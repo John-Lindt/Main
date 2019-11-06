@@ -1,0 +1,37 @@
+Bugs in Sonny:
+
+The Good:
+
+Piling on Equipment: select an item in your inventory. It doesn't matter whether or not it's equipped, just which party member's inventory is pulled up.
+With the piece of equipment still selected, click on the options menu.
+Move the equipment icon to anywhere in the menu itself and click again. The icon should disappear.
+Now, you have the attribute and piercing/resistances normally obtained from wearing the item. Fortunately, the game simply adds the points instead of adding the item, so repeating this process won't slow down the game.
+
+The Bad:
+
+Only related to the above bug. Respeccing will cause you to lose all attribute points gained from this. However, Sonny will keep his piercing/resistance boosts. Useful if you want a 'helping hand' without outright cheating with attribute boosts.
+
+General Enemy Notes:
+
+Zone 1: Due to it's 'tutorial zone' nature, you don't have to be too concerned about dying on the White November.
+Don't follow Louis' advice about defending yourself; even Enraged and poison attacks won't do significant damage.
+Defending/buffing will just slow the game down. Focus on maximizing damage.
+
+Zone 2: The game gets more complex here, with class-oriented equipment and training fights. Early stages will be easier than training fights, but the latter is a good way to fill out a class specific armor set. It also ensures you'll get the best str weapon in the zone (sorry magic users).
+Ghost Assassins are annoying to hit, especially with Shadow Blend. Don't try to use focus-burning moves when that buff is active; it only lasts three turns, so it's pretty easy to wait them out.
+ZPCI Hunters and Ghost Samurai are similar in their healing abilities/damage output. Hit them hard early to put them on the defensive, then boost yourself up and go in for the kill.
+Zombies and the other ZPCI troops are fairly easy to deal with and have only minor debuff capabilities.
+
+Zone 3: The game expands even further in this zone, with class-specific equipment and an equivalent to each class presented as enemies. You can largely handle the progression like Zone 2.
+The Shamans of Blades' high health make them more difficult to deal with than Ghost Assassins, and their damage output is sturdy. Whittling them down with debuffs is the way to go. Irritatingly, they have healing abilities, so make sure to punch harder than they can recover from.
+Rock Golems don't deal as much damage as the Shamans of Blades, but they can be dealt with like most Destroyers: fight fire with fire. Hit them hard, utilize Electro Shock to deal with the buffs, Heroic Motivation for the debuffs.
+Shamans of Death/Controllers and Totems act as standard Gunslingers. Hit them hard and fast before they can do too much damage.
+Shamans of Life are harder to kill than Shamans of death, and fill the Guardian role of party healer. Disable them before going after the weaker enemies.
+ZPCI Elites are essentially upgraded ZPCI Hunters and can be dealt with accordingly.
+Devourers are a mix of Rock Golems and Zone 1 Zombies. Relatively low damage output, but sturdy health and some annoying DOT debuffs. No healing abilities means you can wear them down.
+
+Zone 4: General enemies are limited to Royal Courier and Illusions. Enemies scale while xp gains decline (but at a slower rate than most enemies).
+Royal Couriers are relatively easy to kill. They do moderate damage, but the combined efforts of your endgame team should be able to dispatch them easily. Helps that you fight them one at a time.
+Illusions have some annoying abilities that make them difficult to deal with at any level. Essentially, you get to see some of the best abilities in your arsenal used against you. Shatter Bolt and Intervention are the 
+
+Boss Notes:

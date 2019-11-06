@@ -1,0 +1,56 @@
+Class Descriptions:
+
+An easy way to choose your abilities is looking at what the end game characters of the same class as you have (Amber, Teco, etc) 
+
+Destroyer-
+Definitely the easiest to play. High damage, good for tanking. Spend your attribute points in str.  Keep it simple; maximize damage and let your allies worry about healing/party buffs.
+Recommended abilities: Smash, Wound, Regeneration, Brutality.
+
+Assassin-
+Weakest class. Ideally, the high speed should compensate for low health. Spend your attribute points in agility. In practice, enemies hit you enough to do serious damage with little padding. Deal less damage than Destroyers or Gunslingers.
+Recommended abilities: Smash for early game, Master Strike for end game, Cripple, Brutality.
+
+Guardian-
+Best in the endgame. Veradux fills this role for most of the game, so you won't really be effective until the final zone. Invest in Strength and Magic equally. Your equipment should keep your vitality high enough.
+Recommended abilities: Aggression, Heroic Motivation, Electro Bolt, Intervention, Regeneration.
+
+Gunslinger-
+More nuance than destroyer, but highly viable if you invest your ability points wisely. Spend your attribute points in magic. Focus on damage output and let support units take care of the party.
+Recommended abilities: Magic Bolt, Flame Blast, Void, Regeneration.
+
+Party Composition:
+
+For most of the game, it will just be you and Veradux. I'd recommend keeping him around in the endgame, as he'll likely be significantly higher level than the other companions. Paladin armor also helps keep him relevant (especially the high poison piercing boost).
+If you're a Destroyer or Assassin, consider setting his aggression to green. Yellow aggression offers greater balance for gunslingers. Setting aggression to red will maximize his effectiveness if you're playing as a Guardian.
+
+After the rest of the party is unlocked, I'd recommend the following compositions:
+
+If you're an Assassin:
+Assassin-Veradux/Guardian-Destroyer.
+You and Gilgus can enhance each other's damage output while Veradux/Teco keeps you alive.
+
+Otherwise:
+Guardian/Veradux-Destroyer-Spellslinger.
+Amber's low survivability makes her a weak teammate. Drop Veradux if you're a Guardian. If you're a Destroyer or Gunslinger, it's up to you whether to use Teco or Veradux to fill the healer role.
+
+Party Member Breakdown:
+
+Veradux: abilities akin to Guardian class, balancing healing with str/magic balanced attacks.
+Biggest strength is the poison attack, which scales with strength. The Paladin armor set maximizes the strength of this attack. 
+Biggest weakness is his class (battle medic) limiting his equipment options. His default armor is viable until the third zone.
+
+Amber: standard Assassin build. Slightly more viable than Sonny as an Assassin due to her having shadow blend.
+Biggest strength is shadow blend/master strike. Also has Break, which is more useful when fighting a single opponent.
+Biggest weakness is low health. She often dies early in combat, causing time and focus needing to be diverted to keep her alive.
+
+Gilgus: standard Destroyer build. Has a standard ability build.
+Biggest strength is the high health and damage output makes him good for tanking.
+Biggest weakness is his annoying habit of using Blood Focus regardless of how much focus he has remaining.
+
+Teco: standard Guardian build. More specialized healer than Veradux.
+Biggest strength is diverse party buff/healing abilities.
+Biggest weakness is low offensive capabilities.
+
+Catelin: pure magic user, standard abilities focusing on magic. 
+Biggest strength is diverse array of debuffs she can inflict on opponents.
+Biggest weakness is low survivability. Not as bad as Amber, but still not great.
