@@ -1,0 +1,146 @@
+#include <string>
+#include <vector>
+#include <fstream>
+#include <iostream>
+using namespace std;
+//creating word class
+class word {
+private:
+//declaring content, occurence, location of first occurence variables
+string cont;
+int occur;
+int occloc;
+public:
+//word class getters and setters
+string getCont() {
+	return cont;
+}
+void setCont(string b) {
+	cont=b;
+}
+int getOccur() {
+	return occur;
+}
+void setOccur(int b) {
+	occur=b;
+}
+int getOccLoc() {
+	return occloc;
+}
+void setOccLoc(int b) {
+	occloc=b;
+}
+//increment word count
+void upOcc() {
+	occur++;
+}
+};
+//word vector declaration
+class word_list {
+	private:
+	vector<word> wordVec;
+	public:
+//word list functions
+void addEnd(word b) {
+	wordVec.push_back(b);
+}
+void rmEnd(word_list a) {
+	wordVec.pop_back();
+}
+word readWord(int index) {
+	return wordVec[index];
+}
+//sort vector in ascending order by occurence
+void sortUp() {
+	int size=wordVec.size();
+	for(int i=0;i<(size-1);i++) {
+		int min=i;
+		for(int j=i+1;j<size;j++) {
+			if(wordVec[j].getOccur()<wordVec[min].getOccur()) {
+				min=j;
+			}
+		}
+		int temp=a.wordVec[min];
+		wordVec[min]=wordVec[i];
+		wordVec[i]=temp;
+	}
+}
+//sort vector in descending order by location
+void sortDown() {
+	int size=wordVec.size();
+	for(int i=(size-1);i>0;i--) {
+		int max=i;
+		for(int j=i-1;j>0;j--) {
+			if(wordVec[j].getOccLoc()>wordVec[max].getOccLoc()) {
+				max=j;
+			}
+		}
+		int temp=wordVec[max];
+		wordVec[max]=wordVec[i];
+		wordVec[i]=temp;
+	}
+}
+};
+int main(int argc, char** argv) {
+char temp="";
+if(argc!=2) {
+	cout << "Catastrophic failure! Why did you enter multiple command line arguments? Do you enjoy breaking this poor program's heart?";
+	exit(1);
+}
+string fname=argv[1];
+fstream f1;
+f1.open(fname);
+if(f1.is_open()) {
+	cout << "Unable to open specified file. Please try harder next time.";
+	exit(1);
+}
+word_list wl;
+int loc=-1;
+while(!cin.eof()) {
+	int goNext=0;
+	//iterator to find location of word
+	loc++;
+	string temp,getter="",toAdd;
+	while(goNext=0) {
+		cin.get(temp);
+		if(temp.equals("\n") || temp.equals(" ")) {
+			//check if string already exists
+			int check=0;
+			for(int i=0;i<w1.size();i++) {
+				if(w1[i].equals(temp) {
+					check=i;
+				}
+			}
+			if(check!=0) {
+				//add to existing word object at index check
+				w1[check].upOcc();
+			}
+			else {
+				//declare word object
+				word w;
+				//set cont, increment occur, set occloc
+				w.setCont(toAdd);
+				w.upOcc();
+				w.setOccLoc(loc);
+				w1.push_back(w);
+				goNext++;
+			}
+		}
+		else {
+			toAdd=getter+temp;
+		}
+	}
+}
+f1.close();
+w1.sortUp();
+cout << "Unique words sorted by frequency: ";
+for(int i=0;i<w1.size();i++) {
+	cout << i+1 << ": " << w1[i] << " ";
+}
+w1.sortDown();
+cout << "\nUnique words sorted by first occurence: ";
+for(int i=0;i<w1.size();i++) {
+	cout << i+1 << ": " << w1[i] << " ";
+}
+return 0;
+}
