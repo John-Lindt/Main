@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+void disp(int a[]);
+int part(int a[]);
+int partr(int a[], int low, int high);
+void rqsort(int a[], int low, int high);
+int main() {
+int sort[9]={31,21,39,7,31,12,2,14,9};
+cout << "Unsorted array: ";
+disp(sort);
+rqsort(sort, 31, 9);
+cout << "Sorted array: ";
+disp(sort);
+return 0;
+}
+void disp(int a[]) {
+for(int i=0;i<9;i++) {
+	cout << a[i] << " ";
+}
+cout << endl;
+}
+int part(int a[], int low, int high) {
+int pivot=a[low], i=(low-1),j=(high+1), tempura;
+while(true) {
+	do {
+		i++;
+	} while(a[i]<pivot);
+	do {
+		j--;
+	} while(a[j]>pivot);
+	if(i>=j) {
+		return  j;
+	}
+	tempura=a[i];
+	a[i]=a[j];
+	a[j]=tempura;
+}
+}
+int partr(int a[], int low, int high) {
+srand(time(NULL));
+int random=(low+rand())%(high-low))
+int tempo=a[low];
+a[low]=a[random];
+a[random]=tempo;
+return part(a, low, high);
+}
+void rqsort(int a[], int low, int high) {
+if(low<high) {
+	int index=partr(a, low, high);
+	rqsort(a, low, index);
+	rqsort(a, (index+1), high);
+}
+else {
+	cout << "Randomized quicksort failed." << endl;
+}
+}
