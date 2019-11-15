@@ -90,7 +90,7 @@ if(argc!=2) {
 string fname=argv[1];
 fstream f1;
 f1.open(fname);
-if(f1.is_open()) {
+if(!f1.is_open()) {
 	cout << "Unable to open specified file. Please try harder next time.";
 	exit(1);
 }
