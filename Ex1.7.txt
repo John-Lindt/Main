@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+int sumProd(int a, int b);
+int main(void) {
+	int int1=2, int2=7;
+	int prod1 = sumProd(int1, int2);
+	int int3=2, int4=1;
+	int prod2 = sumProd(int3, int4);
+	cout << "SumProd of int1 and int2: " << prod1 << ". SumProd of int3 and int4: " << prod2;
+	return 0;
+}
+int sumProd(int a, int b) {
+	int sum=(a+b),prod=(a*b);	//sum and product declaration
+	if(sum>prod) {	//sum>product, return sum
+		return sum;
+	}
+	return prod;	//product>sum, return product
+}
