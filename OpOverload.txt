@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+class Math {
+private:
+	int ct=1;
+public:
+	int operator+() {
+		int result=ct+10;
+		return result;
+	}
+	int operator*() {
+		int result=ct*10;
+		return result;
+	}
+	void Disp() {
+		cout<<"Current count: "<<ct<<endl;
+	}
+}
+int main() {
+Math m;
+int test=5;
+m.Disp();
+++m;
+m.Disp();
+test=test**m;
+cout<<"Test value: "<<test<<endl;
+*m;
+m.Disp();
+return 0;
+}
