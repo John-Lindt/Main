@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta author="John Lindt">
+<title>RoS Generator</title>
+</head>
+<body>
+<h1 style="text-align:center;">A Rasp of Sand Room Generator</h1>
+<p><input type="number" id="roomVis" value="0"></p>
+<p><button onclick="makeRoom()">Generate a Room</button></p>
+<p>Room Difficulty: <span id="roomDiff"></p>
+<p>Number of Enemies: <span id="badNum"></p>
+<p>Type of Enemy: <span id="badType"></p>
+<p>Gold Reward: <span id="goldGain"></p>
+<p>Experience Reward: <span id="xpGain"></p>
+<script>
+function makeRoom() {
+/*room difficulty, number of enemies, type of enemy, gold gained, xp gained, number of rooms visited*/
+var roomDiff,badNum,badType,goldGain,xpGain;
+var roomVis = document.getElementById("roomVis");
+/*Room difficulty of 1-5*/
+roomDiff=Math.floor(Math.random()*5+roomVis/10);
+roomVis++;
+badNum=(Math.random()*3+roomDiff);
+if((roomDiff+badNum)<2) {
+badType="Rats";
+}
+else if((roomDiff+badNum)<5) {
+badType="Goblins";
+}
+else if((roomDiff+badNum)<10) {
+badType="Ghouls";
+}
+else {
+badType="Death Knights";
+}
+goldGained=(roomDiff+badNum)*10;
+xpGained=goldGained*.5;
+document.getElementById("roomVis").innerHTML=roomVis;
+document.getElementById("roomDiff").innerHTML=roomDiff;
+document.getElementById("badNum").innerHTML=badNum;
+document.getElementById("badType").innerHTML=badType;
+document.getElementById("goldGain").innerHTML=goldGain;
+document.getElementById("xpGain").innerHTML=xpGain;
+</script>
+</body>
+</html>
