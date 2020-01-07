@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-us">
+<head><title>Workshop Backup</title></head>
+<body>
+<h1 style="text-align:center;font-size:24px;line-height:30px;font-family:asap;font-weight:700;">Attention Severe Back Pain Sufferers, Free Event For You</h1>
+<h2 style="text-align:center;font-size:48px;line-height:50px;font-family:asap;font-weight:700;">Get Back to Normal Naturally Without Medications, Injections or Surgery.</h2>
+<figure class="wp-block-table"><table><tbody><tr style="background-color:#000000;color:#FFFFFF;"><td>[youtube https://www.youtube.com/watch?v=DD5PsgoFa4Q?autoplay=1&amp;w=560&amp;h=315]</td><td><time datetime="2020-1-11" class="icon"> <em>Saturday</em> <strong>January</strong> <span>11</span> </time></td></tr><tr><td><h2 style="text-align:left;font-size:35px;line-height:40px;font-family:asap;font-style:700 bold regular;">Go to the Lower Back Pain Workshop and Learn:</h2> <ol> <li>The Biggest Mistake Low Back Pain Sufferers Make</li> <li>The Three Most Common Causes For Low Back Pain</li> <li>Three Strategies to Reduce Back Pain</li> </ol> <h2>Who is the Workshop For?</h2> <strong>The​ Low Back Pain Workshop​ is​ for​ people​ suffering​ with​ low back pain​ who​ are​ looking​ to​ feel normal​ again​ and​ heal​ naturally​ without​ medications,​ injections​ and​ surgery.</strong> <h2>Do you have back pain when you:</h2> <ol> <li>Sit for long periods of time?</li> <li>Drive?</li> <li>Stand?</li> <li>Walk?</li> <li>Get dressed?</li> <li>Sleep?</li> <li>Do​ work​ around​ the​ house​ or​ yard?</li> <li>Lift something heavy?</li> </ol></td><td><img width="518" height="432" src="https://synergytherapeuticgroup.com/wp-content/uploads/2019/09/3qFqahBeWG-ihndpp1wyc-small-dana-t.jpg" class="vc_single_image-img attachment-full" alt=""></td></tr><tr><td colspan="2"><h2 style="font-size:24px;color:rgb(0,0,0);line-height:30px;text-align:center;font-family:Asap;font-weight:700;font-style:normal;" class="vc_custom_heading">What Do Others Have To Say About The Back Pain Workshop?</h2></td></tr><tr><td></td><td></td></tr><tr><td><em style="font-size:17px;">I have been experiencing back pain and spasms for several years. After therapy at Synergy Therapeutic group pain and spasms are almost gone. The staffs are always professional, caring and optimistic. I am looking forward to continue living pain free.</em><br>
+<strong style="font-size:22px;">Dana T.</strong></td><td><img width="518" height="432" src="https://synergytherapeuticgroup.com/wp-content/uploads/2019/09/3qFqahBeWG-ihndpp1wyc-small-dana-t.jpg" class="vc_single_image-img attachment-full" alt="Subrat with patient"></td></tr><tr><td><img width="567" height="520" src="https://synergytherapeuticgroup.com/wp-content/uploads/2019/09/xNsiqZvvJd-mlj69xsj8a-john1.jpg" class="vc_single_image-img attachment-full" alt=""></td><td><em style="font-size:17px;">I heard of Synergy Therapeutic group from a friend since long time. Although it had helped her greatly through difficult time I was still skeptical that they could help me. I was in such a pain when I finally came- in for consultation that I could hardly seat or walk. Driving was the worst! My pain level has been 8-10/10 for last 8 months. I tried all traditional treatments, MRI, injections, Pain mediation nothing helped more than few days and I am running out of options. After two treatments with the team at Synergy I am 99% pain free even after shopping for three hours. If someone beside my friend had told me this was possible I would have told them to go check into a mental hospital. Thank you.</em><br>
+<strong style="font-size:22px;">Janice G.</strong></td><td><img width="754" height="785" src="https://synergytherapeuticgroup.com/wp-content/uploads/2019/09/C9mqp3EZLV-aveestkuzf-smaller-janice.jpg" class="vc_single_image-img attachment-full" alt="Subrat with patient"></td></tr></tbody></table></figure>
+<div style="color:white;background-color: #212121;overflow: hidden;padding-left: 0;padding-right: 0;padding-top: 35px;position: relative;width:100%;">
+<h2 style="font-size:20px;line-height:20px;text-align:center;font-family:Asap;font-weight:700;"><strong>We have limited spots available and space will fill up fast, so register now to avoid missing out.</strong></h2>
+<p style="text-align:center;">Synergy Therapeutic Group - All Rights Reserved - <a id="link-2761-16" class="" href="http://synergytg.ptworkshops.com/terms-of-services">Terms Of Service </a>| <a id="link-2761-16" class="" href="http://synergytg.ptworkshops.com/privacy-policy">Privacy Policy</a></p><p style="text-align:center;">Have a question? Call Us At <a href="tel:6182437822"><strong>(618) 243-7822</strong></a></p><p style="text-align:center;"><a href="https://www.synergytherapeuticgroup.com/" target="_blank" rel="noopener noreferrer">Learn More About Synergy Therapeutic Group here</a> | <a href="https://www.synergytherapeuticgroup.com/" target="_blank" rel="noopener noreferrer"><strong>Physical Therapy in Carbondale and Du Quoin : Synergy Therapeutic Group </strong>Synergy Therapeutic Group provides Physical Therapy and Occupational Therapy in Carbondale, IL and Du Quoin, IL.</a></p><p style="text-align:center;">Copyright 2019 - Synergy Therapeutic Group - All Rights Reserved</p>
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+<div class="popup">Click me!
+  <span class="popuptext" id="myPopup">Enter Your Info Below To Register For The Back Pain Workshop
+ × 
+<table class="background" style="width:100%;height:100%;" cellspacing="0" cellpadding="10"><tbody><tr><td align="center" valign="top"><table class="bodyContainer webFormBodyContainer" width="100%" cellspacing="0" cellpadding="20" bgcolor="#FFFFFF"><tbody><tr><td class="body" valign="top" bgcolor="#FFFFFF"><div><table class="infusion-field-container" style="width:100%;"><tbody><tr><td class="infusion-field-label-container">First Name *</td><td class="infusion-field-input-container" style="width:200px;"></td></tr></tbody></table></div><div><table class="infusion-field-container" style="width:100%;"><tbody><tr><td class="infusion-field-label-container">Email *</td><td class="infusion-field-input-container" style="width:200px;"></td></tr></tbody></table></div><div><table class="infusion-field-container" style="width:100%;"><tbody><tr><td class="infusion-field-label-container">Phone 1 *</td><td class="infusion-field-input-container" style="width:200px;"></td></tr></tbody></table></div><div><div style="height:15px;line-height:15px;"></div></div><div><div class="infusion-submit" style="text-align:left;"><div><div class="grecaptcha-badge" style="width:256px;height:60px;display:block;transition:right .3s ease 0;position:fixed;bottom:14px;right:-186px;box-shadow:gray 0 0 5px;border-radius:2px;overflow:hidden;"><div class="grecaptcha-logo"></div><div class="grecaptcha-error"></div></div></div>Submit</div></div></td></tr></tbody></table></td></tr></tbody></table>
+</span>
+</div>
+</body>
+</html>
