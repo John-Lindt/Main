@@ -1,0 +1,36 @@
+#include <string.h>
+#include <stdiostream>
+using namespace std;
+int main(int argc, char *argv[]) {
+string db[10][3];
+db[0][0]="John Doe";
+db[0][1]="11111";
+db[0][2]="p0";
+db[4][0]="Jane Deo";
+db[4][1]="22222";
+db[4][2]="p4";
+db[9][0]="Baobab Baboab";
+db[9][1]="33333";
+db[9][2]="p9";
+int log=0;
+string un, pn;
+while(log=0) {
+cout << "Enter your username or id#: ";
+cin >> un;
+for(int i=0;i<10;i++) {
+for(int j=0;j<2;j++) {
+if(db[i][j].equals(un)) {
+cout << "Enter your password: ";
+cin >> pn;
+if(cn[i][2].equals(pn)) {
+cout << "Login complete." << endl;
+log++;
+}
+else {
+cout << "Login credential mismatch.";
+}
+}
+}
+}
+return 0;
+}
