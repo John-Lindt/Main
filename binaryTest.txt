@@ -1,0 +1,18 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int zo();
+int main() {
+int len;
+cout << "How long would you like your binary chain to be? ";
+while(!(cin >> len) || len<0) {
+cout << "Error. Please try again. ";
+}
+for(int i=0;i<len;i++) {
+cout << zo();
+}
+return 0;
+}
+int zo() {
+return math.floor(rand())%2;
+}
