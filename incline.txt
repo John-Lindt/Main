@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "Enter a number: "
+INC=1
+read INC
+i=$INC
+while [[ i -le (5+INC) ]]
+do
+	echo "$INC "
+	INC=$(( $INC + 1))
+done
+echo "Enter a file: "
+read FNAME
+wc -l $FNAME
