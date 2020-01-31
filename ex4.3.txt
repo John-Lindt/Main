@@ -1,0 +1,8 @@
+#!/bin/bash
+function dirSeek(FILEN) {
+wc -a $FILEN || echo "File cannot be processed-it is not a directory."
+}
+echo "Enter a file name: "
+read FNAME
+ls -l $FNAME || STATE=$?;echo "Error. Unable to read file." && exit $STATE
+dirSeek(FNAME)
