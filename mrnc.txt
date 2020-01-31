@@ -1,0 +1,71 @@
+#include <iostream>
+#include <mapreduce>
+using namespace std;
+/*function to map words in document*/
+class WordMapper:public mapper_traits<string, string, int> {
+public:
+	void start()	{}
+	void flush()	{}
+	bool abort()	{return true;}
+	template <typename OutIter>
+	void map(const string &filename, OutIter output) {
+		ifstream infile(filename.c_str());
+		while(infile.good()) {
+			string line;
+			getline(infile, line);
+			regex word_re("(\\w+");
+			sregex_iterator iter(line.begin(), line.end(), word_re);
+			sregex_iterator end;
+			for(;iter!=end;iter++) {
+				string word=iter->str();
+				output=std::pair<string,int>(word,1);
+			}
+		}
+	infile.close();
+	}
+};
+/*function to reduce items by word pattern*/
+class SumReducer:public reducer_traits<string, int, int> {
+public:
+	void start(unsigned int shard_id,bool is_combiner) {}
+	void flush() {}
+	void abort() {return true;}
+	template <typename InIter, typename OutIter>
+	void reduce(const string &key,InIter *value_start,InIter *value_end,OutIter output) {
+		unsigned long long value_sum=OULL;
+		for(InIter *value_iter=value_start;(*value_iter)!=(*value_end);(*value_iter)++;) {
+			value_sum+=*(*value_iter);
+		}
+		output=std::pair<string,int>(key,value_sum);
+	}
+};
+/*io for mapreduce*/
+blocking_output_map out_map;
+output_iter outiter(&out_map);
+buffer_queue<string> input_queue(1000, file_names.begin(),file_names.end());
+queue_wrapper<buffer_queue<string>>input_wrap(input_queue);
+/*map reduce operation hooked up to input*/
+map_reduce_options<WordMapper,SumReducer,output_iter> opts {
+	3,19,5,new simple_tread_pool,out_iter
+};
+map_reduce<input_iter,output_iter,WordMapper,SumReducer> mr(opts);
+/*block for map reduce completion*/
+if(mr.run(input_wrap.front().begin(),input_wrap.front().end())) {
+	cout<<"Map Reduce Successful."<<endl;
+}
+/*mapper class definition*/
+template <typename I,typename K,typename V,typename Args=void,input_tag tag=input_unaware>
+class mapper_traits {
+typedef I input_type;
+typedef K key_type;
+typedef V value_type;
+typedef Args arg_type;
+input_tag mapper_tag=tag;
+};
+class MyMapper:public mapper_traits<I,K,V> {
+void start();
+template<typename OutIter>
+void map(const I &input, OutIter output);
+bool abort();
+void flush();
+};
