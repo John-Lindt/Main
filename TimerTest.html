@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-us">
+<head><title>TimerTest</title></head>
+<body>
+<script>
+/*energy meter function window.onload=*/
+    function time(){
+var h1 = document.getElementById('clock'),
+    start = document.getElementById('start'),
+    stop = document.getElementById('stop'),
+    time=0,
+    t;
+
+function add() {
+    time=time+.01;
+    h1.innerHTML = time.toFixed(2);
+    timer();
+}
+function timer() {
+    t = setTimeout(add, 1000);
+}
+timer();
+
+/* Start button */
+start.onclick = timer;
+
+/* Stop button */
+stop.onclick = function() {
+    clearTimeout(t);
+}}
+</script>
+<h1 id="clock"><time>0.00</time></h1>
+<button id="start" onclick="time()">start</button>
+<button id="stop">stop</button>
+</body>
+</html>
