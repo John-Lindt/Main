@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main() {
+float grade=0, test[3]={0,0,0};
+for(int i=0;i<3;i++) {
+cout << "Enter score for test " << i << endl;
+cin >> test[i];
+}
+grade=(test[0]+test[1]+test[2])/3.0;
+cout << "You got a"
+if(grade<60.0) {
+cout << "n F.";
+}
+else if(grade<70.0) {
+cout << " D.";
+}
+else if(grade<80.0) {
+cout << " C.";
+}
+else if(grade<90.0) {
+cout << " B.";
+}
+else {
+cout << "n A!";
+}
+return 0;
+}
