@@ -6,6 +6,7 @@ int main(int argc, char argv[]) {
 string test="Hello";
 cout << strlen(test) << endl;
 cout << upper(test);
+return 0;
 }
 int strlen(string a) {
 char next=a[0];
@@ -14,7 +15,7 @@ while((next!='/0')&&(next!=null) {
 len++;
 next=a[len];
 }
-return 0;
+return len;
 }
 string upper(string a) {
 int len=strlen(a)+1;
@@ -23,4 +24,5 @@ for(int i=0;i<len;i++) {
 		a[i]=a[i]-32;
 	}	
 }
+return a;
 }
