@@ -1,0 +1,22 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+int main(int argc, char* argv[]) {
+fstream file;
+int charnum, wordnum,linenum=1;
+string line;
+file.open(argv[1]);
+cout << "Characters, words, and lines in file " << argv[1] << "." << endl << "Characters: ";
+while(!(file.eof())) {
+while(file>>line) {
+if(line.equals('\n') {
+linenum++;
+}
+else if((line.equals(' ')) || (line.equals('\t')) {
+wordnum++;
+}
+else {
+charnum++;
+}
+}
+return 0;}
