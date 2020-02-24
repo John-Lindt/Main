@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+int main(int argc, char * argv[]) {
+int arg=1;
+char * a[argc];
+while(arg<argc) {
+a[arg-1]=argv[arg];
+if(a[arg-1]>=97 && a[arg-1]<=122)
+{
+a[arg-1]=a[arg-1]-32;
+}
+arg++;
+}
+arg=1;
+while(arg<argc) {
+cout << a[arg-1] << " from " << argv[arg] << endl;
+arg++;
+}
+return 0;
+}
