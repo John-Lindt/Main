@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Spam Filter</title>
+</head>
+<body>
+<script>
+function inVal() {
+var valid=document.getElementById("valid").innerHTML;
+if(valid.localeCompare("2")=0) {	//check if bot filter is correct
+alert("Hello human!");
+}
+else {	//bot
+alert("You don't know numbers or are a bot!!!");
+}
+</script>
+<form onsubmit=inVal()">
+<label for="name">Name:</label> <input type="text" id="name" name="name"><br>
+<label for="valid">Which is greater, 0 or 2? <input type="text" id="valid" name="valid"><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
