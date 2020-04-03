@@ -55,9 +55,27 @@ int main() {
 	    //clear buffer
 	    memset(&buffer[0], 0, sizeof(buffer));
 	    //get message from next source
-
-	    //send message to other clients
-
+            if(recv(Client1, buffer, 1024, 0)) {
+                recv(Client1, buffer, 1024, 0);
+                //send to client 2 and 3
+                printf ("%s\nSent to Clients\n", buffer);
+                send(Client2,buffer,1024,0);
+                send(Client3,buffer,1024,0);
+            }
+            if(recv(Client2, buffer, 1024, 0)) {
+                recv(Client2, buffer, 1024, 0);
+                //send to client 1 and 3
+                printf ("%s\nSent to Clients\n", buffer);
+                send(Client1,buffer,1024,0);
+                send(Client3,buffer,1024,0);
+            }
+            if(recv(Client3, buffer, 1024, 0)) {
+                recv(Client3, buffer, 1024, 0);
+                //send to client 1 and 2
+                printf ("%s\nSent to Clients\n", buffer);
+                send(Client1,buffer,1024,0);
+                send(Client2,buffer,1024,0);
+            }
 	    //if command was "Exit"
             if (compare_strings(buffer, "Exit")==0)
             {
@@ -68,6 +86,31 @@ int main() {
 else if(compare_strings(buffer, "talk Client2")==0 {
     while (cmdEXIT == 0)
     {
+recv(Client1, buffer, 1024, 0);
+        //send to client 2
+        printf ("%s\nSent to Client 2\n", buffer);
+        send(Client2,buffer,1024,0);
+        //exit if client 
+        if (compare_strings(buffer, "Exit")==0)
+        {   
+            cmdEXIT = 1;
+        }
+        //sinon
+        else 
+        {
+            //clear buffer
+            memset(&buffer[0], 0, sizeof(buffer));
+            //get message from client 2
+            recv(Client2, buffer, 1024, 0);
+            //send to client 1
+            printf ("%s\nSent to Client 1\n", buffer);
+            send(Client1,buffer,1024,0);
+            //check if "Exit"
+            if (compare_strings(buffer, "Exit")==0)
+            {
+                cmdEXIT = 1;
+            }
+        }
             //clear buffer
             memset(&buffer[0], 0, sizeof(buffer));
             //receive message from client 1
