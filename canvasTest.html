@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><title>Canvas Testing</title>
+<meta author="John Lindt"></head>
+<body>
+<script>
+document.onload=function() {
+	var c=document.getElementById("myCanvas");
+	var ctx=c.getContext("2d");
+	ctx.beginPath();
+	//background
+	var grd=ctx.createRadialGradient(75,50,5,90,60,100);
+	grd.addColorStop(0,"yellow");
+	grd.addColorStop(1,"white");
+	ctx.fillStyle=grd;
+	ctx.fillRect(10,10,150,80);
+	//first eye
+	ctx.arc(20,50,40,0,2*Math.PI);
+	ctx.stroke();
+	//second eye
+	ctx.arc(80,50,40,0,2*Math.PI);
+	ctx.stroke();
+	//nose
+	ctx.moveTo(50,20);
+	ctx.lineTo(50,40);
+	//mouth
+	ctx.arc(50,30,40,2,2*Math.PI);
+	ctx.stroke();
+	//text
+	ctx.font="2em Arial";
+	ctx.strokeText("Have a Good Day!",10,50);
+}
+</script>
+<canvas id="myCanvas" style="width: 80%;height:40%;margin-left:0;margin-right:0;border:.1em solid #000000;">
+Your browser does not support canvas.</canvas>
+</body></html>
