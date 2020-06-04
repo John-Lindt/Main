@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head><title>Angular Practice</title></head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script>
+var app=angular.module('jApp',[]);
+app.controller('jCtr',function($scope) {
+$scope.num1=0;
+$scope.num2=0;
+});
+</script>
+<div ng-app="jApp" ng-init="num1=0;num2=0">
+<p>I am a representative from an organization looking to send a press release to radio stations such as WPTI. 
+Who is the point of contact for this matter?</p>
+<p>Number One: <input type="number" ng-model="num1"></p>
+<p>Number Two: <input type="number" ng-model="num2"></p>
+<p>Sum: <span ng-bind="num1"></span> + <span ng-bind="num2"></span> = {{num1+num2}}</p>
+</div>
+</body></html>

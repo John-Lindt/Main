@@ -1,0 +1,27 @@
+BB Digital Lab Issues:
+Theme:
+Associate ACE Formula more with your brand or drop it, replace with something more lab-y
+More media: examples of work, testimonials, videos we've made, etc
+No info in first fold
+Marketing and Media Service seems like it is a link, remove or put in hero logo 
+Paragraph text too small
+Need links to social media
+Like and share buttons should be on same line, like before share
+Powered By Wordpress.com should be replaced with contact info for company
+Home Page:
+Tag line sounds too salesy/not natural
+Authority | Credibility | Expertise should be accordion, with descriptions of each
+Contact form should be in its own box/section
+Our Team:
+John image low quality
+People should have brief decription
+Links of our specific work (videos for you, web pages for me)
+Web Design:
+Everything should be aligned the same way (center or left)
+Images should be on grid instead of a straight line
+Digital Marketing Services: Buttons shouldn't be more than two colors (orange and blue, ideally)
+Past Projects With needs to language change
+WSIU link should just be wsiu.org
+Photography:
+Buttons indicate they are clickable, but are not associated with links
+Buttons should be two color types again
