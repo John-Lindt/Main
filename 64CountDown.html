@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>64 Countdown</title>
+<meta charset="UTF-8">
+<meta name="description" content="Count down your 64 pieces of daily content.">
+<meta name="keywords" content="Gary Vee, documentation, social media">
+<meta name="author" content="John Lindt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<button id="incdown" style="color:#000000;" onclick="ctdown()">I posted something!</button>
+<p id="count">64</p>
+<script>
+var dec = (function() {
+var count = 64;
+return function() {if(count>0) {return count-=1;} return count;}
+})();
+function ctdown() {document.getElementById("count").innerHTML=dec();}
+</script>
+</body>
+</html>
