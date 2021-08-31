@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head><title>Format Test</title></head><body class="view-item collection-type-products">
+<style>
+h1,h2,p {
+	font-size:1em;
+}
+.view-item h1.page-title {
+	font-size: 2em;
+}
+div.page-desc strong[data-shrink-original-size="72"] {
+	font-size: 2em;
+}
+</style>
+<h1 class="page-title">This should be 2em.</h1>
+<h2 class="page-title">This should not be 2em.</h2>
+<div class="page-desc"><p class="page-desc">This should not be 2em.</p>
+<p><strong data-shrink-original-size="72">This should be 2em.</strong></p></div>
+</body></html>
