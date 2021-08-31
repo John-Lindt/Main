@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head><title>Format Test</title></head><body>
+<style>
+h1,h2,p {
+	color:red;
+}
+h1.page-title,.page-desc > strong {
+	font-size: 2em;
+	color:blue;
+}
+</style>
+<h1 class="page-title">This should be 2em.</h1>
+<h2 class="page-title">This should not be 2em.</h2>
+<p class="page-desc">This should not be 2em.</p>
+<p class="page-desc"><strong>This should be 2em.</strong></p>
+</body></html>
