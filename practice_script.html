@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta name="author" content="John Lindt">
+<meta name="keywords" content="programming">
+<title>Javascript Text Modification</title>
+<script>
+var inc=0;
+function changeColor() {
+	if(inc==0) {
+	document.getElementById("ref").innerHTML="And.";
+	document.getElementById("ref").style="color:#ff9900";
+	inc++;
+	}
+	else if(inc==1) {
+	document.getElementById("ref").innerHTML="&amp;";
+	document.getElementById("ref").style="color:#000000";
+	inc--;
+	}
+}
+</script>
+</head>
+<body>
+<h2 id="ref">I will change.</h2>
+<button type="button" onclick="changeColor()">Click Me</button><br>
+</body>
+</html>
