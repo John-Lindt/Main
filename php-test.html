@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>PHP Practice</title>
+</head>
+<body>
+<?php
+int $counter=0;
+function iterate(int $x=0) {
+while($x++ < 20) {
+	if($counter<0) {
+		echo "List of chars: $counter , ";
+	}
+	else {
+		echo "$counter, ";
+	}
+}
+}
+iterate(20);
+?>
+</body>
+</html>
